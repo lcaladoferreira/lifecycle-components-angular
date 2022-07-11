@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align: center;">
+  <h1>
+    lifecycle {{ title }} angular!
+  </h1>
+  <button (click)="add()">add</button>
+
+  <div *ngFor="let id of ids">
+    <app-refresh [id]="id"></app-refresh>
+    <button (click)="delete(id)">delete</button>
+  </div>
+</div>
